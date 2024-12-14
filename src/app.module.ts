@@ -1,12 +1,11 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
 import { PortfolioController } from './portfolio/portfolio.controller';
 import { PortfolioService } from './portfolio/portfolio.service';
 import { PortfolioModule } from './portfolio/portfolio.module';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { AppConfig, DatabaseConfig } from './config';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { Portfolio } from './portfolio/portfolio.entity';
 
 
 @Module({
@@ -23,9 +22,11 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       }),
       inject: [ConfigService],
     }),
+    TypeOrmModule.forFeature([Portfolio]),
     PortfolioModule],
-  controllers: [AppController, PortfolioController],
-  providers: [AppService, PortfolioService],
+  controllers: [PortfolioController],
+  providers: [PortfolioService],
+
 })
 export class AppModule {
 }
