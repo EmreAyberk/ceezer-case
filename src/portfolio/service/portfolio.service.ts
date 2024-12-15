@@ -31,6 +31,7 @@ export class PortfolioService {
 
     for (const { portfolioId, targetTons, offeredTons } of targetAllocations) {
       const allocatedVolume = Math.min(targetTons, offeredTons, remainingTons);
+
       allocations.push({ portfolioId: portfolioId, offeredVolume: allocatedVolume });
       remainingTons -= allocatedVolume;
 
@@ -39,6 +40,12 @@ export class PortfolioService {
       }
     }
 
+    this.allocateLeftover(remainingTons, allocations, portfolios);
+
+    return serializerService.serializeResponse('generated_portfolio', buildPortfolioRO(allocations, portfolios));
+  }
+
+  private allocateLeftover(remainingTons: number, allocations: PortfolioAllocation[], portfolios: Portfolio[]) {
     if (remainingTons > 0) {
       for (const allocation of allocations) {
         const project = portfolios.find((p) => p.id === allocation.portfolioId);
@@ -56,63 +63,6 @@ export class PortfolioService {
         }
       }
     }
-
-    return serializerService.serializeResponse('generated_portfolio', buildPortfolioRO(allocations, portfolios));
+    return;
   }
-
-  //
-  //
-  // async allocateCredits(
-  //   requestedTons: number,
-  // ): Promise<PortfolioAllocation[]> {
-  //   const projects = await this.portfolioRepository.find();
-  //   const totalDistributionWeight = projects.reduce(
-  //     (sum, project) => sum + project.distributionWeight,
-  //     0,
-  //   );
-  //
-  //   // Step 2: Determine target allocation for each project
-  //   const targetAllocations = projects.map((project) => ({
-  //     portfolioId: project.id,
-  //     targetTons: (project.distributionWeight / totalDistributionWeight) * requestedTons,
-  //     offeredTons: project.offeredVolumeInTons,
-  //   }));
-  //
-  //   // Step 3: Allocate tons respecting offered values and weights
-  //   const allocations: PortfolioAllocation[] = [];
-  //   let remainingTons = requestedTons;
-  //
-  //   for (const { portfolioId, targetTons, offeredTons } of targetAllocations) {
-  //     const allocatedCredits = Math.min(targetTons, offeredTons, remainingTons);
-  //     allocations.push({ portfolioId, allocatedCredits });
-  //     remainingTons -= allocatedCredits;
-  //
-  //     // Break if no tons are left to allocate
-  //     if (remainingTons <= 0) {
-  //       break;
-  //     }
-  //   }
-  //
-  //   // Step 4: Handle shortfalls by redistributing remaining tons
-  //   if (remainingTons > 0) {
-  //     for (const allocation of allocations) {
-  //       const project = projects.find((p) => p.id === allocation.portfolioId);
-  //       if (project) {
-  //         const additionalAllocation = Math.min(
-  //           project.offeredVolumeInTons - allocation.allocatedCredits,
-  //           remainingTons,
-  //         );
-  //         allocation.allocatedCredits += additionalAllocation;
-  //         remainingTons -= additionalAllocation;
-  //       }
-  //
-  //       if (remainingTons <= 0) {
-  //         break;
-  //       }
-  //     }
-  //   }
-  //
-  //   return allocations;
-  // }
-
 }
