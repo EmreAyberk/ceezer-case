@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
-import { PortfolioController } from './portfolio.controller';
-import { PortfolioService } from './portfolio.service';
-import { Portfolio } from './portfolio.entity';
+import { PortfolioController } from './controller/portfolio.controller';
+import { PortfolioService } from './service/portfolio.service';
+import { Portfolio } from './entity/portfolio.entity';
 import { TypeOrmModule } from '@nestjs/typeorm';
 
 @Module({
