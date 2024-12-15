@@ -14,7 +14,7 @@ export class Portfolio {
   @Column()
   image: string;
 
-  @Column({ type: 'decimal',name: 'price_per_ton' })
+  @Column({ type: 'float',name: 'price_per_ton' })
   pricePerTon: number;
 
   @Column({ name: 'offered_value_in_tons' })
