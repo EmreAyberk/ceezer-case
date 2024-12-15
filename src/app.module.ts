@@ -4,6 +4,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { AppConfig, DatabaseConfig } from './config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Portfolio } from './portfolio/entity/portfolio.entity';
+import { DataSeedService } from './seed/data-seed.service';
 import { SerializerService } from './shared/services/serilizer.service';
 
 
@@ -23,7 +24,7 @@ import { SerializerService } from './shared/services/serilizer.service';
     }),
     TypeOrmModule.forFeature([Portfolio]),
     PortfolioModule],
-  providers: [SerializerService],
+  providers: [DataSeedService, SerializerService],
 
 })
 export class AppModule {
