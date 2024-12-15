@@ -3,7 +3,7 @@ import { PortfolioService } from './portfolio.service';
 import { DataSource, Repository } from 'typeorm';
 import { Portfolio } from '../entity/portfolio.entity';
 import { getRepositoryToken } from '@nestjs/typeorm';
-import { PortfolioGenerationRO } from '../portfolio.interface';
+import { PortfolioGenerationRO } from '../interface/portfolio.interface';
 
 describe('PortfolioService', () => {
   let service: PortfolioService;
