@@ -104,3 +104,15 @@ Once the application is running, you can access the Swagger UI at:
 URL: http://localhost:8080/swagger
 
 
+### Running with Docker Compose
+
+This project includes a docker-compose.yml file to simplify running the application and its dependencies. Ensure that both Docker and Docker Compose are installed on your machine.
+
+#### Build and Run:
+```bash
+docker-compose up --build
+```
+
+This command will:
+-	Build the project’s Docker image.
+-	Start all defined services (such as the NestJS application and Postgresql databese) as specified in the docker-compose.yml file.
