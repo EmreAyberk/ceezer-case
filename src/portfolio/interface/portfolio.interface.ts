@@ -1,5 +1,6 @@
 import { IsNotEmpty } from 'class-validator';
-import { Portfolio } from './entity/portfolio.entity';
+import { Portfolio } from '../entity/portfolio.entity';
+import { Float } from '@chakra-ui/react';
 
 export interface PortfolioGenerationRO {
   portfolios: PortfolioGenerationData[];
@@ -42,7 +43,7 @@ export function buildPortfolioRO(allocations: PortfolioAllocation[], portfolios:
   const portfolioData: PortfolioGenerationData[] = portfolios.map((p) => {
     return {
       name: p.name,
-      pricePerTon: p.pricePerTon,
+      pricePerTon: parseFloat(p.pricePerTon.toFixed(2)),
       offeredVolumeInTons: allocationMap.get(p.id),
       supplierName: p.supplierName,
       earliestDelivery: p.earliestDelivery,

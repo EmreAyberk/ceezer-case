@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { DataSource, Repository } from 'typeorm';
 import { Portfolio } from '../entity/portfolio.entity';
 import { InjectRepository } from '@nestjs/typeorm';
-import { buildPortfolioRO, PortfolioAllocation, PortfolioGenerationData, PortfolioGenerationRO } from '../portfolio.interface';
+import { buildPortfolioRO, PortfolioAllocation } from '../interface/portfolio.interface';
 import { serializerService, ISerializeResponse } from '../../shared/services/serilizer.service';
 
 @Injectable()
