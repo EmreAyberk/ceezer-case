@@ -18,6 +18,13 @@ export class PortfolioService {
     private readonly portfolioRepository: Repository<Portfolio>,
   ) {}
 
+  async getAllPortfolios(): Promise<ISerializeResponse> {
+    const portfolios = await this.portfolioRepository.find();
+    return serializerService.serializeResponse('all_portfolios', {
+      portfolios: portfolios,
+    });
+  }
+
   async generatePortfolio(
     desiredVolumeInTons: number,
   ): Promise<ISerializeResponse> {

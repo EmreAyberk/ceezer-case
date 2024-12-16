@@ -3,7 +3,8 @@ import { InjectRepository } from '@nestjs/typeorm';
 import * as fs from 'fs';
 import { Portfolio } from '../portfolio/entity/portfolio.entity';
 import { Repository } from 'typeorm';
-import csv from 'csv-parser';
+
+const csv = require('csv-parser');
 
 export class DataSeedService implements OnApplicationBootstrap {
   constructor(

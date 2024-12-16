@@ -1,4 +1,10 @@
-import { BadRequestException, Body, Controller, Post } from '@nestjs/common';
+import {
+  BadRequestException,
+  Body,
+  Controller,
+  Get,
+  Post,
+} from '@nestjs/common';
 import { PortfolioService } from '../service/portfolio.service';
 import { ISerializeResponse } from '../../shared/services/serilizer.service';
 import { ApiBody, ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
@@ -45,6 +51,11 @@ export class PortfolioController {
     return await this.portfolioService.generatePortfolio(
       dto.desiredVolumeInTons,
     );
+  }
+
+  @Get('')
+  async getAllPortfolio(): Promise<ISerializeResponse> {
+    return await this.portfolioService.getAllPortfolios();
   }
 
   // @Get(':id')
