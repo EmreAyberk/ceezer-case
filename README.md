@@ -30,29 +30,31 @@ Install all project dependencies:
 $ npm install
 ```
 
+before you run the project you need to set env
+```bash
+nano .env
+```
+and then copy this fields
+
+```
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=portfolio
+DB_USER=admin
+DB_PASSWORD=root
+NODE_ENV=development
+PORT=8080
+```
+now you can easily start your application
 
 ```bash
-# development
 $ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
 ```
 
-### Run tests
+#### Run tests
 
 ```bash
-# unit tests
 $ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
 ```
 
 ### Project Structure
