@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="260fbb05-5797-4093-8035-d366b7ffae74" name="Changes" comment="feat: CZR-01 README.md edited">
+      <change afterPath="$PROJECT_DIR$/frontend/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/CODE_OF_CONDUCT.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/SECURITY.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/SUPPORT.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/components/date.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/components/layout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/components/layout.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/components/portfolioGrid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/lib/cosmos.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/lib/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/next.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/pages/_app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/pages/api/todos/[id].js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/pages/api/todos/create.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/pages/api/todos/delete/[id].js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/pages/api/todos/list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/pages/api/todos/update/[id].js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/pages/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/images/cosmos-connection.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/images/profile.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/sample.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/styles/global.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/styles/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/styles/public/images/profile.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/styles/utils.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/vercel.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.eslintrc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.prettierrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/backend/data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/1734258500722-initialSetup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/migrations/1734258500722-initialSetup.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/1734284796156-initialSetup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/migrations/1734284796156-initialSetup.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/typeorm.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/typeorm.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-cli.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/nest-cli.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/config/app.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/database.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/config/database.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/config/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/metadata.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/metadata.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/portfolio/controller/portfolio.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/portfolio/controller/portfolio.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/portfolio/dto/generate-entry.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/portfolio/dto/generate-entry.dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/portfolio/dto/generate-response.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/portfolio/dto/generate-response.dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/portfolio/entity/portfolio.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/portfolio/entity/portfolio.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/portfolio/interface/portfolio.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/portfolio/interface/portfolio.interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/portfolio/portfolio.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/portfolio/portfolio.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/portfolio/repository/portfolio.repository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/portfolio/repository/portfolio.repository.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/portfolio/service/portfolio.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/portfolio/service/portfolio.service.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/portfolio/service/portfolio.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/portfolio/service/portfolio.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/seed/data-seed.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/seed/data-seed.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/filters/http-exception.filter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/shared/filters/http-exception.filter.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/services/serilizer.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/shared/services/serilizer.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/types/http/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/shared/types/http/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/types/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/shared/types/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/app.e2e-spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/test/app.e2e-spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/jest-e2e.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/test/jest-e2e.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tsconfig.build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tsconfig.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;EmreAyberk&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:EmreAyberk/ceezer-case.git&quot;,
+    &quot;accountId&quot;: &quot;1e6951c3-5daa-4674-8440-eaabfd633e63&quot;
+  }
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2qGeDKiMPxTuwvADJGkBNCrl9zv" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "feature/CZR-01-portfolio-generation",
+    "last_opened_file_path": "/Users/ayberk.kaymaz/Desktop/github/ceezer-case/frontend",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.build (1).executor": "Run",
+    "npm.build.executor": "Run",
+    "npm.buildFE.executor": "Run",
+    "npm.format.executor": "Run",
+    "npm.start (1).executor": "Run",
+    "npm.start.executor": "Run",
+    "npm.start:dev (1).executor": "Run",
+    "npm.start:dev.executor": "Run",
+    "npm.startBackend.executor": "Run",
+    "npm.startFE.executor": "Run",
+    "npm.startFrontend.executor": "Run",
+    "prettierjs.PrettierConfiguration.Package": "/Users/ayberk.kaymaz/Desktop/github/ceezer-case/backend/node_modules/prettier",
+    "ts.external.directory.path": "/Users/ayberk.kaymaz/Desktop/github/ceezer-case/backend/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/.idea" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.startFE">
+    <configuration name="buildFE" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/frontend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="buildFE" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="startBackend" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/backend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="startBackend" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="startFE" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/frontend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="startFE" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="startFrontend" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/frontend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="startFrontend" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.startFE" />
+        <item itemvalue="npm.buildFE" />
+        <item itemvalue="npm.startFrontend" />
+        <item itemvalue="npm.startBackend" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-WS-243.22562.112" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task id="LOCAL-00001" summary="feat: CZR-01 README.md docker part added">
+      <option name="closed" value="true" />
+      <created>1734288179052</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1734288179052</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: CZR-01 github actions added">
+      <option name="closed" value="true" />
+      <created>1734288460761</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1734288460761</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="260fbb05-5797-4093-8035-d366b7ffae74" name="Changes" comment="feat: CZR-01 github actions added" />
+      <created>1734293219769</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1734293219769</updated>
+      <workItem from="1734293220993" duration="54000" />
+      <workItem from="1734296659714" duration="1969000" />
+      <workItem from="1734338823051" duration="2040000" />
+      <workItem from="1734346874993" duration="520000" />
+      <workItem from="1734347485084" duration="3294000" />
+    </task>
+    <task id="LOCAL-00003" summary="feat: CZR-01 README.md edited">
+      <option name="closed" value="true" />
+      <created>1734339491085</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1734339491085</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="feature/CZR-01-portfolio-generation" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: CZR-01 README.md docker part added" />
+    <MESSAGE value="feat: CZR-01 github actions added" />
+    <MESSAGE value="feat: CZR-01 README.md edited" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: CZR-01 README.md edited" />
+  </component>
+</project>
