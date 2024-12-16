@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Box, Grid, GridItem, Heading, Text, Spinner, Center, Image } from '@chakra-ui/react';
+import NextLink from 'next/link';
 
 export default function PortfolioGrid() {
   const [portfolios, setPortfolios] = useState([]);
@@ -42,33 +43,33 @@ export default function PortfolioGrid() {
   return (
     <Box p={8}>
       <Grid templateColumns="repeat(auto-fit, minmax(250px, 1fr))" gap={6}>
-        {portfolios.map((portfolio, index) => (
-          <GridItem
-            key={index}
-            borderWidth="1px"
-            borderRadius="lg"
-            overflow="hidden"
-            boxShadow="lg"
-            bg="white"
-            _hover={{ transform: 'scale(1.05)', transition: '0.2s' }}
-          >
-            <Image
-              src={portfolio.image || 'https://via.placeholder.com/300'}
-              alt={portfolio.name}
-              objectFit="cover"
-              height="200px"
-              width="100%"
-            />
-            <Box p={4}>
-              <Heading size="md" mb={2}>
-                {portfolio.name}
-              </Heading>
-              <Text><strong>Price per Ton:</strong> ${portfolio.pricePerTon}</Text>
-              <Text><strong>Offered Volume:</strong> {portfolio.offeredVolumeInTons} tons</Text>
-              <Text><strong>Supplier:</strong> {portfolio.supplierName}</Text>
-              <Text><strong>Earliest Delivery:</strong> {portfolio.earliestDelivery}</Text>
-            </Box>
-          </GridItem>
+        {portfolios.map((portfolio) => (
+          <NextLink key={portfolio.id} href={`/portfolio/${portfolio.id}`} passHref>
+            <GridItem
+              borderWidth="1px"
+              borderRadius="lg"
+              overflow="hidden"
+              boxShadow="lg"
+              bg="white"
+              _hover={{ transform: 'scale(1.05)', transition: '0.2s', cursor: 'pointer' }}
+            >
+              <Image
+                src={portfolio.image}
+                alt={portfolio.name}
+                objectFit="cover"
+                height="200px"
+                width="100%"
+              />
+              <Box p={4}>
+                <Heading size="md" mb={2}>
+                  {portfolio.name}
+                </Heading>
+                <Text><strong>Price per Ton:</strong> ${portfolio.pricePerTon}</Text>
+                <Text><strong>Offered Volume:</strong> {portfolio.offeredVolumeInTons} tons</Text>
+                <Text><strong>Supplier:</strong> {portfolio.supplierName}</Text>
+              </Box>
+            </GridItem>
+          </NextLink>
         ))}
       </Grid>
     </Box>

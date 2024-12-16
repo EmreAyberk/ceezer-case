@@ -19,7 +19,7 @@ import {
 export default function PortfolioTable() {
   const [generatedData, setGeneratedData] = useState(null);
   const [loading, setLoading] = useState(false);
-  const [desiredVolume, setDesiredVolume] = useState(79); // Default value
+  const [desiredVolume, setDesiredVolume] = useState(60);
 
   async function handleGenerate() {
     setLoading(true);

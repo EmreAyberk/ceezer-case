@@ -28,7 +28,6 @@ export default function Home() {
           Your browser does not support the video tag.
         </video>
 
-        {/* Content Overlay */}
         <Box
           position="relative"
           height="100%"
@@ -39,7 +38,7 @@ export default function Home() {
           color="white"
           textAlign="center"
           px={4}
-          bg="rgba(0, 0, 0, 0.4)" // Slight dark overlay for text readability
+          bg="rgba(0, 0, 0, 0.4)"
         >
           <Heading fontSize={{ base: '3xl', md: '5xl' }} fontWeight="bold">
             Empowering a Greener Future
@@ -55,7 +54,6 @@ export default function Home() {
         </Box>
       </Box>
 
-      {/* About Section */}
       <Container maxW="container.lg" py={16}>
         <VStack spacing={6} textAlign="center">
           <Heading fontSize="3xl">About Our Marketplace</Heading>
@@ -67,7 +65,6 @@ export default function Home() {
         </VStack>
       </Container>
 
-      {/* Features Section */}
       <Box bg="gray.50" py={16}>
         <Container maxW="container.lg">
           <Heading fontSize="3xl" mb={8} textAlign="center">
@@ -95,7 +92,6 @@ export default function Home() {
         </Container>
       </Box>
 
-      {/* Footer */}
       <Box bg="teal.600" color="white" py={8} textAlign="center">
         <Text>&copy; {new Date().getFullYear()} Carbon Marketplace. All rights reserved.</Text>
       </Box>

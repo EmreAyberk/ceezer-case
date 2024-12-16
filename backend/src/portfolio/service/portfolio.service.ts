@@ -25,6 +25,15 @@ export class PortfolioService {
     });
   }
 
+  async getPortfolioById(id: number): Promise<ISerializeResponse> {
+    const portfolio = await this.portfolioRepository.findOne({
+      where: { id: id },
+    });
+    return serializerService.serializeResponse('portfolio', {
+      portfolio: portfolio,
+    });
+  }
+
   async generatePortfolio(
     desiredVolumeInTons: number,
   ): Promise<ISerializeResponse> {

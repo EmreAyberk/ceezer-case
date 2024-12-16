@@ -3,6 +3,7 @@ import {
   Body,
   Controller,
   Get,
+  Param,
   Post,
 } from '@nestjs/common';
 import { PortfolioService } from '../service/portfolio.service';
@@ -58,9 +59,8 @@ export class PortfolioController {
     return await this.portfolioService.getAllPortfolios();
   }
 
-  // @Get(':id')
-  // async getPortfolio(@Param('id') id: number): Promise<ISerializeResponse> {
-  //
-  //   return await this.portfolioService.generatePortfolio(requestedTons);
-  // }
+  @Get(':id')
+  async getPortfolioById(@Param('id') id: number): Promise<ISerializeResponse> {
+    return await this.portfolioService.getPortfolioById(id);
+  }
 }
