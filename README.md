@@ -132,6 +132,6 @@ curl --location 'http://localhost:8080/portfolio/generate' \
 
 I get inspiration from some projects and websites:
 
-https://github.com/Tenacity-Dev/nestjs-migrations-example
-https://vercel.com/templates/next.js/azure-cosmosdb-nextjs-starter
-https://www.ceezer.earth/ (get a video from there 😋)
+- https://github.com/Tenacity-Dev/nestjs-migrations-example
+- https://vercel.com/templates/next.js/azure-cosmosdb-nextjs-starter
+- https://www.ceezer.earth/ (get a video from there 😋)
