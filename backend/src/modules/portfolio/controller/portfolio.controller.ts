@@ -26,7 +26,7 @@ export class PortfolioController {
   @ApiResponse({
     status: 200,
     description: 'Portfolio generated successfully.',
-    type: PortfolioListDTO, // TODO: solve how to set interface as a type
+    type: PortfolioListDTO, // TODO: solve how to set interface as a type, search for decorators
   })
   @ApiResponse({
     status: 400,

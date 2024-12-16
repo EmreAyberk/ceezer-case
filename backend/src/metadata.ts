@@ -5,7 +5,7 @@ export default async () => {
     '@nestjs/swagger': {
       models: [
         [
-          import('./portfolio/entity/portfolio.entity'),
+          import('./modules/portfolio/entity/portfolio.entity'),
           {
             Portfolio: {
               id: { required: true, type: () => Number },
@@ -22,7 +22,7 @@ export default async () => {
           },
         ],
         [
-          import('./portfolio/dto/generate-entry.dto'),
+          import('./modules/portfolio/dto/generate-entry.dto'),
           {
             GenerateEntryDto: {
               desiredVolumeInTons: { required: true, type: () => Number },
@@ -32,7 +32,7 @@ export default async () => {
       ],
       controllers: [
         [
-          import('./portfolio/controller/portfolio.controller'),
+          import('./modules/portfolio/controller/portfolio.controller'),
           { PortfolioController: { generatePortfolio: { type: Object } } },
         ],
       ],

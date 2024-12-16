@@ -43,22 +43,39 @@ export class PortfolioService {
       0,
     );
 
-    // TODO: bunu fonksiyona taşı
-    const targetAllocations = portfolios
-      .sort((a, b) => b.distributionWeight - a.distributionWeight)
-      .map((p) => ({
-        portfolioId: p.id,
-        targetTons: Math.round(
-          (p.distributionWeight / totalDistributionWeight) *
-            desiredVolumeInTons,
-        ),
-        offeredTons: p.offeredVolumeInTons,
-      }));
+    const targetAllocations = this.getTargetAllocations(
+      portfolios,
+      totalDistributionWeight,
+      desiredVolumeInTons,
+    );
 
     const allocations: PortfolioAllocation[] = [];
+    // I should change let to the const and change it to the object
     let remainingTons = desiredVolumeInTons;
 
-    // TODO: bunu da fonksiyona at
+    remainingTons = this.allocatePortfolios(
+      targetAllocations,
+      remainingTons,
+      allocations,
+    );
+
+    this.allocateLeftover(remainingTons, allocations, portfolios);
+
+    return serializerService.serializeResponse(
+      'generated_portfolio',
+      buildPortfolioRO(allocations, portfolios),
+    );
+  }
+
+  private allocatePortfolios(
+    targetAllocations: {
+      portfolioId: number;
+      targetTons: number;
+      offeredTons: number;
+    }[],
+    remainingTons: number,
+    allocations: PortfolioAllocation[],
+  ) {
     for (const { portfolioId, targetTons, offeredTons } of targetAllocations) {
       const allocatedVolume = Math.min(targetTons, offeredTons, remainingTons);
 
@@ -72,13 +89,24 @@ export class PortfolioService {
         break;
       }
     }
+    return remainingTons;
+  }
 
-    this.allocateLeftover(remainingTons, allocations, portfolios);
-
-    return serializerService.serializeResponse(
-      'generated_portfolio',
-      buildPortfolioRO(allocations, portfolios),
-    );
+  private getTargetAllocations(
+    portfolios: Portfolio[],
+    totalDistributionWeight: number,
+    desiredVolumeInTons: number,
+  ) {
+    return portfolios
+      .sort((a, b) => b.distributionWeight - a.distributionWeight)
+      .map((p) => ({
+        portfolioId: p.id,
+        targetTons: Math.round(
+          (p.distributionWeight / totalDistributionWeight) *
+            desiredVolumeInTons,
+        ),
+        offeredTons: p.offeredVolumeInTons,
+      }));
   }
 
   private allocateLeftover(

@@ -33,7 +33,7 @@ export interface PortfolioListData {
   description: string;
 }
 
-//TODO: interface olan bir yerde logic olmamalı
+//TODO: should move to another folder and do not hold anything except interface
 export function buildPortfolioRO(
   allocations: PortfolioAllocation[],
   portfolios: Portfolio[],

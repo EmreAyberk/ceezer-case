@@ -5,7 +5,6 @@ export default function Home() {
   return (
     <Box>
       <Box position="relative" height="60vh" overflow="hidden">
-        {/* Video Background */}
         <video
           autoPlay
           loop

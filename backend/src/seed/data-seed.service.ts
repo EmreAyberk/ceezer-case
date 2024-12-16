@@ -1,7 +1,7 @@
 import { OnApplicationBootstrap } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import * as fs from 'fs';
-import { Portfolio } from '../portfolio/entity/portfolio.entity';
+import { Portfolio } from '../modules/portfolio/entity/portfolio.entity';
 import { Repository } from 'typeorm';
 
 const csv = require('csv-parser');
