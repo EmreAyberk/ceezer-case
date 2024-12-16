@@ -66,7 +66,7 @@ export default function Home() {
       </Container>
 
       <Box bg="gray.50" py={16}>
-        <Container maxW="container.lg">
+        <Box maxW="1600px" mx="auto" px={4}>
           <Heading fontSize="3xl" mb={8} textAlign="center">
             Why Choose Our Marketplace?
           </Heading>
@@ -76,21 +76,20 @@ export default function Home() {
               title="Verified Suppliers"
               description="Partner with verified and trusted suppliers who provide high-quality carbon credits. Our marketplace ensures transparency, authenticity, and trust in every transaction, helping you confidently reduce your carbon footprint."
             />
-
             <FeatureCard
               image="/images/digital-transaction.jpg"
               title="Seamless Transactions"
               description="Experience smooth and efficient transactions through our user-friendly platform. We simplify the process of buying and selling carbon credits, ensuring a seamless and hassle-free experience for all participants."
             />
-
             <FeatureCard
               image="/images/sustainable-impact.jpg"
               title="Sustainable Impact"
               description="Contribute to global sustainability by supporting projects that make a real difference. From renewable energy to reforestation, every credit purchased helps create a healthier planet for future generations."
             />
           </SimpleGrid>
-        </Container>
+        </Box>
       </Box>
+
 
       <Box bg="teal.600" color="white" py={8} textAlign="center">
         <Text>&copy; {new Date().getFullYear()} Carbon Marketplace. All rights reserved.</Text>
