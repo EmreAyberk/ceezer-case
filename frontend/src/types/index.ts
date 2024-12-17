@@ -1,4 +1,4 @@
-export type PortfolioGridItemType = {
+export type PortfolioItemType = {
   id: number,
   name: string,
   country: string,
@@ -14,6 +14,29 @@ export type PortfolioGridItemType = {
 export type PortfolioGridItemResponseType = {
   type: string,
   attributes: {
-    portfolios: PortfolioGridItemType[];
+    portfolios: PortfolioItemType[];
+  }
+}
+
+export type PortfolioDetailResponseType = {
+  type: string,
+  attributes: {
+    portfolio: PortfolioItemType;
+  }
+}
+
+export type PortfolioTableItemType = {
+  name: string,
+  pricePerTon: number,
+  offeredVolumeInTons: number,
+  supplierName: string,
+  earliestDelivery: string,
+}
+
+export type PortfolioTableItemResponseType = {
+  type: string,
+  attributes: {
+    portfolios: PortfolioTableItemType[];
+    totalOfferedVolume: number,
   }
 }

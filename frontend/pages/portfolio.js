@@ -1,6 +1,6 @@
 import { Box, Heading } from '@chakra-ui/react';
 import PortfolioGrid from '../src/components/portfolio/grid';
-import PortfolioTable from '../src/components/PortfolioTable';
+import PortfolioTable from '../src/components/portfolio/table';
 
 export default function Portfolios() {
   return (

@@ -1,9 +1,9 @@
 import NextLink from 'next/link';
 import { Box, GridItem, Heading, Image, Text } from '@chakra-ui/react';
-import { PortfolioGridItemType } from '../../../types';
+import { PortfolioItemType } from '../../../types';
 
 type PortfolioGridItemProps = {
-  portfolio: PortfolioGridItemType
+  portfolio: PortfolioItemType
 }
 export const PortfolioGridItem = ({ portfolio }: PortfolioGridItemProps) => {
 
