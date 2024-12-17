@@ -4,6 +4,7 @@ import * as fs from 'fs';
 import { Portfolio } from '../modules/portfolio/entity/portfolio.entity';
 import { Repository } from 'typeorm';
 
+// eslint-disable-next-line @typescript-eslint/no-require-imports
 const csv = require('csv-parser');
 
 export class DataSeedService implements OnApplicationBootstrap {
